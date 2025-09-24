@@ -1,0 +1,39 @@
+----- Övningar: Objektorienterad programmering -----
+# Klasser och objekt #
+    1. Skapa en klass Car med attributen brand och year.
+        - Lägg till en metod description() som skriver ut “Märke: X, År: Y”.
+        - Skapa två bil-objekt och skriv ut deras beskrivningar.
+    2. Utöka klassen Car med en metod age() som räknar ut hur gammal bilen är baserat på nuvarande år (tips: använd datetime).
+
+# Arv och polymorfism #
+    1. Skapa en basklass Vehicle med attribut brand och en metod drive().
+        - Skapa två underklasser Car och Bicycle som överskuggar metoden drive() med olika utskrifter.
+        - Lägg objekten i en lista och loopa över dem.
+    2. Lägg till en ny klass Boat och se om programmet fungerar utan ändringar.
+
+# Större övningar (välj en eller flera) #
+
+    ZOO-SIMULATOR - Bygg en simulator som hanterar olika djur i ett zoo:
+        1. Skapa en basklass Animal med attribut name och en metod make_sound().
+        2. Skapa underklasser Lion, Ape och Zebra som överskuggar make_sound().
+        3. Skapa en klass Zoo som kan:
+            - Lägga till djur
+            - Visa alla djur
+            - Mata alla djur (feed_animal())
+        4. Bygg en meny där användaren kan:
+            - Lägga till djur
+            - Lista alla djur
+            - Mata djuren
+            - Låta djuren göra ljud
+            - Avsluta
+    
+    SPELKARAKTÄRER - Bygg en liten stridssimulator med olika karaktärer:
+        1. Skapa en basklass Character med attribut name och health.
+            - Lägg till en metod is_alive() som returnerar True om hälsan är > 0.
+        2. Skapa underklasser Warrior och Magician som båda har en metod attack(other_character), men med olika logik:
+            - Warrior minskar motståndarens hälsa med ett fast värde.
+            - Magician kastar en trollformel som gör slumpmässig skada (tips: använd random.randint).
+        3. Skriv en stridsloop där två karaktärer turas om att attackera varandra tills en förlorar.
+        4. Utveckla vidare:
+            - Lägg till en metod defend() som minskar skadan.
+            - Lägg till fler karaktärstyper (t.ex. Archer).
